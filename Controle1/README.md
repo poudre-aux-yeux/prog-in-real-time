@@ -40,7 +40,7 @@ void loop() {
     if(millis()>= (refTime + INCREMENT_TIME)) {
         refTime = millis();
         if (consigne > previous) analogWrite(PIN_MOTOR, ++previous);
-        elseif(consigne < previous) analogWrite(PIN_MOTOR, --previous)
+        elseif(consigne < previous) analogWrite(PIN_MOTOR, --previous);
     }
 }
 ```
