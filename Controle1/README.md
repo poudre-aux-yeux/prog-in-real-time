@@ -5,9 +5,20 @@ Sur mon Arduino sont branchés un potentiomètre sur le pin A0 et un contrôleur
 On veut que la vitesse du moteur varie avec celle du potentiomètre mais avec une accéleération contrôlée d'environ 10% par seconde. Par exemple si mon moteur tourne à 10% et que d'un coup, la nouvelle consigne liée au potentiomètre passe à 50%, alors le minicontrôleur devra progressivement faire accélérer le moteur pendant 4 secondes.
 
 Rappels :
-N'oubliez pas que le convertisseur analogique-numérique de l'ATMEGA328P est 10-bits et que le générateur PWM est 8-bits.  
-byte, int, long, float, char, void setup(), void loop()  
-pinMode(pin, mode), digitalWrite(pin, etat), Serial.begin(vitesse), Serial.print(message), analogRead(pin), analogWrite(pin, valeur), millis(), microseconds()
+
+N'oubliez pas que le convertisseur analogique-numérique de l'ATMEGA328P est 10-bits et que le générateur PWM est 8-bits.
+
+byte, int, long, float, char  
+void setup()  
+void loop()  
+pinMode(pin, mode)  
+digitalWrite(pin, etat)  
+Serial.begin(vitesse)  
+Serial.print(message)  
+analogRead(pin)  
+analogWrite(pin, valeur)  
+millis()  
+microseconds()
 
 ```c++
 #define PIN_MOTOR 9
